@@ -1,7 +1,7 @@
 import requests
 import time
 
-websites = ["https://deepmonapara.dev"]
+websites = ["https://your-website.com"]
 
 
 def check_website(url):
