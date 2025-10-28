@@ -3,5 +3,11 @@ venv/
 __pycache__/
 *.pyc
 .env
-gen-lang-client-*.json
-email_log.csv
+*.csv
+*.pdf
+*.json
+*.docx
+*.xlsx
+*.pptx
+*.txt
+*.log

@@ -23,11 +23,22 @@ Website monitoring automation that checks the availability and response times of
 ### 📧 Email Analyzer Streamlit Dashboard
 
 Interactive web dashboard for email analysis featuring:
+
 - Real-time inbox monitoring and unread email tracking
 - Top senders visualization with interactive charts
 - Email data logging to Google Sheets or local CSV files
 - Historical email statistics and trends
 - SSL-secured IMAP connection with Gmail integration
+
+### 🧠 AI-Powered Resume Analyzer
+
+Intelligent resume analysis tool powered by local Ollama AI featuring:
+- PDF and DOCX resume text extraction
+- AI-powered resume analysis and scoring
+- Structured data extraction (name, email, skills, experience)
+- CSV logging for resume analysis history
+- Interactive Streamlit web interface
+- Local processing with Ollama (Mistral model)
 
 ## 🚀 Getting Started
 
@@ -48,14 +59,16 @@ Interactive web dashboard for email analysis featuring:
 4. Navigate to the desired automation folder and run the script
 
 ## 📁 Project Structure
+
 ```
 Automations/
-├── News Headlines Tracker/           # RSS feed monitoring
-├── System Health Check/              # System monitoring
-├── Website Health Check/             # Website availability monitoring
+├── News Headlines Tracker/              # RSS feed monitoring
+├── System Health Check/                 # System monitoring
+├── Website Health Check/                # Website availability monitoring
 ├── Email Analyzer Streamlit Dashboard/  # Interactive email analysis dashboard
-├── venv/                            # Virtual environment
-└── README.md                        # This file
+├── AI-Powered Resume Analyzer/          # AI resume analysis with Ollama
+├── venv/                               # Virtual environment
+└── README.md                           # This file
 ```
 
 ## 🔧 Usage
@@ -63,18 +76,41 @@ Automations/
 Each automation script is self-contained within its respective folder. Navigate to the specific automation directory you want to use and follow the instructions in that folder.
 
 ### Running the Email Dashboard
+
 For the Streamlit Email Analyzer Dashboard:
+
 ```bash
 cd "Email Analyzer Streamlit Dashboard"
 streamlit run email_dashboard.py
 ```
+
 The dashboard will open in your web browser at `http://localhost:8501`
 
+### Running the Resume Analyzer
+
+For the AI-Powered Resume Analyzer:
+
+```bash
+cd "AI-Powered Resume Analyzer"
+streamlit run app.py
+```
+
+**Prerequisites:** Ensure Ollama is installed and the Mistral model is available:
+```bash
+# Install Ollama (if not already installed)
+curl -fsSL https://ollama.ai/install.sh | sh
+
+# Pull the Mistral model
+ollama pull mistral
+```
+
 Most automations are designed to run continuously or on scheduled intervals, making them perfect for:
+
 - Cron jobs
 - Background processes
 - Scheduled monitoring tasks
 - Interactive web dashboards (Streamlit apps)
+- AI-powered document analysis
 
 ## 📝 Notes
 
